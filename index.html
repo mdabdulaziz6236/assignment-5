@@ -3,35 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Service</title>
+    <title>Emergency Hotline Service</title>
     <!-- fav icon link -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <!-- daisyUi and tailwind css cdn -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- font awesome cdn -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- hind madurai font -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--css link -->
+        <link rel="stylesheet" href="./style.css">
+        
 
 </head>
-<body>
+<body class="hind-madurai-light">
     <!-- navbar part -->
-    <header>
-
+    <header class="bg-[#ffffff] flex justify-between py-[27px] w-11/12 mx-auto">
+        <div class="flex justify-center items-center">
+            <img class="w-[50px]" src="./assets/logo.png" alt="">
+            <h1 class="text-[#006747] text-[23px] font-bold ml-3">Emergency <br>Service</h1>
+        </div>
+        <div class="flex gap-3">
+            <div class=" flex items-center justify-center w-[150px] h-[55px] bg-[#41ff6b1a] rounded-[50px]">
+                <p class="text-[20px] text-black font-black pr-5"> 0 </p>
+                <img class="w-[30px]" src="./assets/coin.png" alt="">
+            </div>
+            <div class=" flex justify-center items-center w-[150px] h-[55px] bg-[#41ff6b1a] rounded-[50px]">
+                <p class="text-[20px] text-black font-black pr-5"> 0 </p>
+                <img class="w-[30px]" src="./assets/heart.png" alt="">
+            </div>
+            
+            <div class="border flex justify-center items-center w-[170px] h-[60px] bg-[#00a63e] text-[20px] text-[#ffffff] font-semibold rounded-[50px]"><p><span class="pr-5"> 0 </span> Copy </p></div>
+            
+        </div>
     </header>
-    <main>
-          <!-- banner section -->
-        <section>
-
-        </section>
-         <!-- cart and history section  -->
-        <section>
-            <!-- cart-box -->
-            <section>
-
-            </section>
-            <!-- cart-history section -->
-            <section>
-
-            </section>
-        </section>
+    <main class="bg-[#f5fff6]">
+          
     </main>
     <script src="./script/script.js"></script>
 </body>
