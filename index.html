@@ -42,22 +42,25 @@
       </div>
       <div class="flex gap-3">
         <div
+          class="flex justify-center items-center w-[150px] h-[55px] bg-[#41ff6b1a] rounded-[50px]"
+        >
+          <p id="total-heart" class="text-[20px] text-black font-black pr-5">
+            0
+          </p>
+          <img class="w-[30px]" src="./assets/heart.png" alt="" />
+        </div>
+        <div
           class="flex items-center justify-center w-[150px] h-[55px] bg-[#41ff6b1a] rounded-[50px]"
         >
-          <p class="text-[20px] text-black font-black pr-5">0</p>
+          <p id="total-coin" class="text-[20px] text-black font-black pr-5">
+            0
+          </p>
           <img class="w-[30px]" src="./assets/coin.png" alt="" />
         </div>
         <div
-          class="flex justify-center items-center w-[150px] h-[55px] bg-[#41ff6b1a] rounded-[50px]"
-        >
-          <p class="text-[20px] text-black font-black pr-5">0</p>
-          <img class="w-[30px]" src="./assets/heart.png" alt="" />
-        </div>
-
-        <div
           class="border flex justify-center items-center w-[170px] h-[60px] bg-[#00a63e] text-[20px] text-[#ffffff] font-semibold rounded-[50px]"
         >
-          <p><span class="pr-5"> 0 </span> Copy</p>
+          <p><span id="total-copy" class="pr-5"> 0 </span> Copy</p>
         </div>
       </div>
     </header>
@@ -83,37 +86,42 @@
       >
         <!-- cart-box -->
         <section class="col-span-3">
-          <section class="grid grid-cols-3 grid-flow-row gap-6">
-            <section class="bg-white shadow p-5 rounded-[12px]">
+          <section id="cart-box" class="grid grid-cols-3 grid-flow-row gap-6">
+            <section class="card bg-white shadow p-5 rounded-[12px]">
               <div class="flex justify-between items-center">
                 <img
                   class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
                   src="./assets/emergency.png"
                   alt=""
                 />
-                <p class="text-[30px]"><i class="fa-regular fa-heart"></i></p>
+                <p class="text-[30px]">
+                  <i class="heart-btn fa-regular fa-heart"></i>
+                </p>
               </div>
               <div>
                 <h2 class="text-[20px] font-bold mt-[16px]">
                   National Emergency Number
                 </h2>
-                <h3 class="text-[16px] font-normal">National Emergency</h3>
-                <h1 class="text-[30px] font-bold mt-[24px]">999</h1>
+                <h3 class="text-[16px] text-gray-500 font-semibold">
+                  National Emergency
+                </h3>
+                <h1 class="hotline-number text-[30px] font-bold mt-[24px]">
+                  999
+                </h1>
                 <p
-                  class="flex justify-center items-center text-[18px] font-normal bg-gray-300 rounded-[15px] w-[50px] p-1"
+                  class="flex justify-center items-center text-[18px] text-gray-500 font-medium bg-gray-300 rounded-[15px] w-[50px] p-1"
                 >
                   All
                 </p>
               </div>
               <div class="mt-[24px] flex gap-1">
                 <button
-                  class="btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
-                  disabled="disabled"
+                  class="copy-btn hover:bg-gray-600 hover:text-white btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
                 >
-                  <i class="fa-regular fa-copy"></i> Copy
+                  <i class="copy-btn fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#006747]"
+                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#00a63e]"
                   tabindex="-1"
                   role="button"
                   aria-disabled="true"
@@ -122,36 +130,39 @@
                 </button>
               </div>
             </section>
-            <section class="bg-white shadow p-5 rounded-[12px]">
+            <section class="card bg-white shadow p-5 rounded-[12px]">
               <div class="flex justify-between items-center">
                 <img
                   class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
                   src="./assets/police.png"
                   alt=""
                 />
-                <p class="text-[30px]"><i class="fa-regular fa-heart"></i></p>
+                <p class="text-[30px]">
+                  <i class="heart-btn fa-regular fa-heart"></i>
+                </p>
               </div>
               <div>
                 <h2 class="text-[20px] font-bold mt-[16px]">
                   Police Helpline Number
                 </h2>
-                <h3 class="text-[16px] font-normal">Police</h3>
-                <h1 class="text-[30px] font-bold mt-[24px]">999</h1>
+                <h3 class="text-[16px] text-gray-500 font-semibold">Police</h3>
+                <h1 class="hotline-number text-[30px] font-bold mt-[24px]">
+                  999
+                </h1>
                 <p
-                  class="flex justify-center items-center text-[16px] font-normal bg-gray-300 rounded-[15px] w-[70px] p-1"
+                  class="flex justify-center items-center text-[16px] text-gray-500 font-medium bg-gray-300 rounded-[15px] w-[70px] p-1"
                 >
                   Police
                 </p>
               </div>
               <div class="mt-[24px] flex gap-1">
                 <button
-                  class="btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
-                  disabled="disabled"
+                  class="copy-btn hover:bg-gray-600 hover:text-white btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
                 >
-                  <i class="fa-regular fa-copy"></i> Copy
+                  <i class="copy-btn fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#006747]"
+                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#00a63e]"
                   tabindex="-1"
                   role="button"
                   aria-disabled="true"
@@ -160,36 +171,41 @@
                 </button>
               </div>
             </section>
-            <section class="bg-white shadow p-5 rounded-[12px]">
+            <section class="card bg-white shadow p-5 rounded-[12px]">
               <div class="flex justify-between items-center">
                 <img
                   class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
                   src="./assets/fire-service.png"
                   alt=""
                 />
-                <p class="text-[30px]"><i class="fa-regular fa-heart"></i></p>
+                <p class="text-[30px]">
+                  <i class="heart-btn fa-regular fa-heart"></i>
+                </p>
               </div>
               <div>
                 <h2 class="text-[20px] font-bold mt-[16px]">
                   Fire Service Number
                 </h2>
-                <h3 class="text-[16px] font-normal">Fire Service</h3>
-                <h1 class="text-[30px] font-bold mt-[24px]">999</h1>
+                <h3 class="text-[16px] text-gray-500 font-semibold">
+                  Fire Service
+                </h3>
+                <h1 class="hotline-number text-[30px] font-bold mt-[24px]">
+                  999
+                </h1>
                 <p
-                  class="flex justify-center items-center text-[18px] font-normal bg-gray-300 rounded-[15px] w-[50px] p-1"
+                  class="flex justify-center items-center text-[16px] text-gray-500 font-medium bg-gray-300 rounded-[15px] w-[50px] p-1"
                 >
                   Fire
                 </p>
               </div>
               <div class="mt-[24px] flex gap-1">
                 <button
-                  class="btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
-                  disabled="disabled"
+                  class="copy-btn hover:bg-gray-600 hover:text-white btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
                 >
-                  <i class="fa-regular fa-copy"></i> Copy
+                  <i class="copy-btn fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#006747]"
+                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#00a63e]"
                   tabindex="-1"
                   role="button"
                   aria-disabled="true"
@@ -198,74 +214,41 @@
                 </button>
               </div>
             </section>
-            <section class="bg-white shadow p-5 rounded-[12px]">
-              <div class="flex justify-between items-center">
-                <img
-                  class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
-                  src="./assets/ambulance.png"
-                  alt=""
-                />
-                <p class="text-[30px]"><i class="fa-regular fa-heart"></i></p>
-              </div>
-              <div>
-                <h2 class="text-[20px] font-bold mt-[16px]">
-                  Ambulance Service
-                </h2>
-                <h3 class="text-[16px] font-normal">Ambulance</h3>
-                <h1 class="text-[30px] font-bold mt-[24px]">1994-999999</h1>
-                <p
-                  class="flex justify-center items-center text-[16px] font-normal bg-gray-300 rounded-[15px] w-[70px] p-1"
-                >
-                  Health
-                </p>
-              </div>
-              <div class="mt-[24px] flex gap-1">
-                <button
-                  class="btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
-                  disabled="disabled"
-                >
-                  <i class="fa-regular fa-copy"></i> Copy
-                </button>
-                <button
-                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#006747]"
-                  tabindex="-1"
-                  role="button"
-                  aria-disabled="true"
-                >
-                  <i class="fa-solid fa-phone"></i> Call
-                </button>
-              </div>
-            </section>
-            <section class="bg-white shadow p-5 rounded-[12px]">
+            <section class="card bg-white shadow p-5 rounded-[12px]">
               <div class="flex justify-between items-center">
                 <img
                   class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
                   src="./assets/emergency.png"
                   alt=""
                 />
-                <p class="text-[30px]"><i class="fa-regular fa-heart"></i></p>
+                <p class="text-[30px]">
+                  <i class="heart-btn fa-regular fa-heart"></i>
+                </p>
               </div>
               <div>
                 <h2 class="text-[20px] font-bold mt-[16px]">
-                  Women & Child Helpline
+                  National Emergency Number
                 </h2>
-                <h3 class="text-[16px] font-normal">Women & Child Helpline</h3>
-                <h1 class="text-[30px] font-bold mt-[24px]">109</h1>
+                <h3 class="text-[16px] text-gray-500 font-semibold">
+                  National Emergency
+                </h3>
+                <h1 class="hotline-number text-[30px] font-bold mt-[24px]">
+                  999
+                </h1>
                 <p
-                  class="flex justify-center items-center text-[16px] font-normal bg-gray-300 rounded-[15px] w-[50px] p-1"
+                  class="flex justify-center items-center text-[18px] text-gray-500 font-medium bg-gray-300 rounded-[15px] w-[50px] p-1"
                 >
-                  Help
+                  All
                 </p>
               </div>
               <div class="mt-[24px] flex gap-1">
                 <button
-                  class="btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
-                  disabled="disabled"
+                  class="copy-btn hover:bg-gray-600 hover:text-white btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
                 >
-                  <i class="fa-regular fa-copy"></i> Copy
+                  <i class="copy-btn fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#006747]"
+                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#00a63e]"
                   tabindex="-1"
                   role="button"
                   aria-disabled="true"
@@ -274,36 +257,125 @@
                 </button>
               </div>
             </section>
-            <section class="bg-white shadow p-5 rounded-[12px]">
+            <section class="card bg-white shadow p-5 rounded-[12px]">
+              <div class="flex justify-between items-center">
+                <img
+                  class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
+                  src="./assets/police.png"
+                  alt=""
+                />
+                <p class="text-[30px]">
+                  <i class="heart-btn fa-regular fa-heart"></i>
+                </p>
+              </div>
+              <div>
+                <h2 class="text-[20px] font-bold mt-[16px]">
+                  Police Helpline Number
+                </h2>
+                <h3 class="text-[16px] text-gray-500 font-semibold">Police</h3>
+                <h1 class="hotline-number text-[30px] font-bold mt-[24px]">
+                  999
+                </h1>
+                <p
+                  class="flex justify-center items-center text-[16px] text-gray-500 font-medium bg-gray-300 rounded-[15px] w-[70px] p-1"
+                >
+                  Police
+                </p>
+              </div>
+              <div class="mt-[24px] flex gap-1">
+                <button
+                  class="copy-btn hover:bg-gray-600 hover:text-white btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
+                >
+                  <i class="copy-btn fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#00a63e]"
+                  tabindex="-1"
+                  role="button"
+                  aria-disabled="true"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </section>
+            <section class="card bg-white shadow p-5 rounded-[12px]">
+              <div class="flex justify-between items-center">
+                <img
+                  class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
+                  src="./assets/fire-service.png"
+                  alt=""
+                />
+                <p class="text-[30px]">
+                  <i class="heart-btn fa-regular fa-heart"></i>
+                </p>
+              </div>
+              <div>
+                <h2 class="text-[20px] font-bold mt-[16px]">
+                  Fire Service Number
+                </h2>
+                <h3 class="text-[16px] text-gray-500 font-semibold">
+                  Fire Service
+                </h3>
+                <h1 class="hotline-number text-[30px] font-bold mt-[24px]">
+                  999
+                </h1>
+                <p
+                  class="flex justify-center items-center text-[16px] text-gray-500 font-medium bg-gray-300 rounded-[15px] w-[50px] p-1"
+                >
+                  Fire
+                </p>
+              </div>
+              <div class="mt-[24px] flex gap-1">
+                <button
+                  class="copy-btn hover:bg-gray-600 hover:text-white btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
+                >
+                  <i class="copy-btn fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#00a63e]"
+                  tabindex="-1"
+                  role="button"
+                  aria-disabled="true"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </section>
+            <section class="card bg-white shadow p-5 rounded-[12px]">
               <div class="flex justify-between items-center">
                 <img
                   class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
                   src="./assets/emergency.png"
                   alt=""
                 />
-                <p class="text-[30px]"><i class="fa-regular fa-heart"></i></p>
+                <p class="text-[30px]">
+                  <i class="heart-btn fa-regular fa-heart"></i>
+                </p>
               </div>
               <div>
                 <h2 class="text-[20px] font-bold mt-[16px]">
-                  Anti-Corruption Helpline
+                  National Emergency Number
                 </h2>
-                <h3 class="text-[16px] font-normal">Anti-Corruption</h3>
-                <h1 class="text-[30px] font-bold mt-[24px]">106</h1>
+                <h3 class="text-[16px] text-gray-500 font-semibold">
+                  National Emergency
+                </h3>
+                <h1 class="hotline-number text-[30px] font-bold mt-[24px]">
+                  999
+                </h1>
                 <p
-                  class="flex justify-center items-center text-[16px] font-normal bg-gray-300 rounded-[15px] w-[55px] p-1"
+                  class="flex justify-center items-center text-[18px] text-gray-500 font-medium bg-gray-300 rounded-[15px] w-[50px] p-1"
                 >
-                  Govt.
+                  All
                 </p>
               </div>
               <div class="mt-[24px] flex gap-1">
                 <button
-                  class="btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
-                  disabled="disabled"
+                  class="copy-btn hover:bg-gray-600 hover:text-white btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
                 >
-                  <i class="fa-regular fa-copy"></i> Copy
+                  <i class="copy-btn fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#006747]"
+                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#00a63e]"
                   tabindex="-1"
                   role="button"
                   aria-disabled="true"
@@ -312,36 +384,39 @@
                 </button>
               </div>
             </section>
-            <section class="bg-white shadow p-5 rounded-[12px]">
+            <section class="card bg-white shadow p-5 rounded-[12px]">
               <div class="flex justify-between items-center">
                 <img
                   class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
-                  src="./assets/emergency.png"
+                  src="./assets/police.png"
                   alt=""
                 />
-                <p class="text-[30px]"><i class="fa-regular fa-heart"></i></p>
+                <p class="text-[30px]">
+                  <i class="heart-btn fa-regular fa-heart"></i>
+                </p>
               </div>
               <div>
                 <h2 class="text-[20px] font-bold mt-[16px]">
-                  Electricity Helpline
+                  Police Helpline Number
                 </h2>
-                <h3 class="text-[16px] font-normal">Electricity Outage</h3>
-                <h1 class="text-[30px] font-bold mt-[24px]">16216</h1>
+                <h3 class="text-[16px] text-gray-500 font-semibold">Police</h3>
+                <h1 class="hotline-number text-[30px] font-bold mt-[24px]">
+                  999
+                </h1>
                 <p
-                  class="flex justify-center items-center text-[16px] font-normal bg-gray-300 rounded-[15px] w-[80px] p-1"
+                  class="flex justify-center items-center text-[16px] text-gray-500 font-medium bg-gray-300 rounded-[15px] w-[70px] p-1"
                 >
-                  Electricity
+                  Police
                 </p>
               </div>
               <div class="mt-[24px] flex gap-1">
                 <button
-                  class="btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
-                  disabled="disabled"
+                  class="copy-btn hover:bg-gray-600 hover:text-white btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
                 >
-                  <i class="fa-regular fa-copy"></i> Copy
+                  <i class="copy-btn fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#006747]"
+                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#00a63e]"
                   tabindex="-1"
                   role="button"
                   aria-disabled="true"
@@ -350,72 +425,41 @@
                 </button>
               </div>
             </section>
-            <section class="bg-white shadow p-5 rounded-[12px]">
+            <section class="card bg-white shadow p-5 rounded-[12px]">
               <div class="flex justify-between items-center">
                 <img
                   class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
-                  src="./assets/brac.png"
+                  src="./assets/fire-service.png"
                   alt=""
                 />
-                <p class="text-[30px]"><i class="fa-regular fa-heart"></i></p>
-              </div>
-              <div>
-                <h2 class="text-[20px] font-bold mt-[16px]">Brac Helpline</h2>
-                <h3 class="text-[16px] font-normal">Brac</h3>
-                <h1 class="text-[30px] font-bold mt-[24px]">16445</h1>
-                <p
-                  class="flex justify-center items-center text-[16px] font-normal bg-gray-300 rounded-[15px] w-[50px] p-1"
-                >
-                  NGO
+                <p class="text-[30px]">
+                  <i class="heart-btn fa-regular fa-heart"></i>
                 </p>
-              </div>
-              <div class="mt-[24px] flex gap-1">
-                <button
-                  class="btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
-                  disabled="disabled"
-                >
-                  <i class="fa-regular fa-copy"></i> Copy
-                </button>
-                <button
-                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#006747]"
-                  tabindex="-1"
-                  role="button"
-                  aria-disabled="true"
-                >
-                  <i class="fa-solid fa-phone"></i> Call
-                </button>
-              </div>
-            </section>
-            <section class="bg-white shadow p-5 rounded-[12px]">
-              <div class="flex justify-between items-center">
-                <img
-                  class="w-[50px] p-3 bg-[#FFE3E2] rounded-[16px]"
-                  src="./assets/Bangladesh-Railway.png"
-                  alt=""
-                />
-                <p class="text-[30px]"><i class="fa-regular fa-heart"></i></p>
               </div>
               <div>
                 <h2 class="text-[20px] font-bold mt-[16px]">
-                  Bangladesh Railway Helpline
+                  Fire Service Number
                 </h2>
-                <h3 class="text-[16px] font-normal">Bangladesh Railway</h3>
-                <h1 class="text-[30px] font-bold mt-[24px]">163</h1>
+                <h3 class="text-[16px] text-gray-500 font-semibold">
+                  Fire Service
+                </h3>
+                <h1 class="hotline-number text-[30px] font-bold mt-[24px]">
+                  999
+                </h1>
                 <p
-                  class="flex justify-center items-center text-[16px] font-normal bg-gray-300 rounded-[15px] w-[60px] p-1"
+                  class="flex justify-center items-center text-[16px] text-gray-500 font-medium bg-gray-300 rounded-[15px] w-[50px] p-1"
                 >
-                  Travel
+                  Fire
                 </p>
               </div>
               <div class="mt-[24px] flex gap-1">
                 <button
-                  class="btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
-                  disabled="disabled"
+                  class="copy-btn hover:bg-gray-600 hover:text-white btn rounded-[8px] text-[18px] bg-white text-gray-500 w-[50%]"
                 >
-                  <i class="fa-regular fa-copy"></i> Copy
+                  <i class="copy-btn fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#006747]"
+                  class="rounded-[8px] text-[18px] text-white btn-disabled w-[50%] bg-[#00a63e]"
                   tabindex="-1"
                   role="button"
                   aria-disabled="true"
