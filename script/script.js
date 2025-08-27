@@ -1,4 +1,3 @@
-
 // make a function for getting id
 function getId(id) {
   const element = document.getElementById(id);
@@ -28,7 +27,7 @@ getId("cart-box").addEventListener("click", function (e) {
       alert(" Number copied ! : " + hotlineNumber);
     });
 
-    // count total copy in total copy 
+    // count total copy in total copy
     const totalCopy = getId("total-copy").innerText;
     const currentTotalCopy = Number(totalCopy) + 1;
     getId("total-copy").innerText = currentTotalCopy;
@@ -75,11 +74,10 @@ getId("cart-box").addEventListener("click", function (e) {
   }
 });
 
-
 // clear button form history container
 getId("clear-btn").addEventListener("click", function () {
   const history = getId("cart-container");
   history.innerHTML = " ";
 });
 
-
+// console.log("Alhamdulillah for everything.")
